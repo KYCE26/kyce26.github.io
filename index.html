@@ -1,19 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/swagger-ui-dist@5/swagger-ui.css" />
-
-    <title>Open API Swagger</title>
+    <title>goBooked API UI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="container">
+        <h1>goBooked API</h1>
+        <div class="form-container">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
 
-    <div id="swagger-ui"></div> <!-- Div to hold the UI component -->
+        <div class="form-container">
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
 
-    <script type="module" src="./swagger.js"></script>
+        <div class="form-container">
+            <h2>Get Motors</h2>
+            <button id="get-motors-button">Get Motors</button>
+            <div id="motors-list"></div>
+        </div>
+
+        <div class="form-container">
+            <h2>Add Motor</h2>
+            <form id="add-motor-form">
+                <input type="text" id="motor-name" placeholder="Motor Name" required>
+                <input type="text" id="motor-plate" placeholder="Plate" required>
+                <button type="submit">Add Motor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Update Motor</h2>
+            <form id="update-motor-form">
+                <input type="text" id="update-motor-id" placeholder="Motor ID" required>
+                <input type="text" id="update-motor-name" placeholder="Motor Name" required>
+                <input type="text" id="update-motor-plate" placeholder="Plate" required>
+                <button type="submit">Update Motor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Delete Motor</h2>
+            <form id="delete-motor-form">
+                <input type="text" id="delete-motor-id" placeholder="Motor ID" required>
+                <button type="submit">Delete Motor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Get Booked</h2>
+            <button id="get-booked-button">Get Booked</button>
+            <div id="booked-list"></div>
+        </div>
+
+        <div class="form-container">
+            <h2>Book Motor</h2>
+            <form id="book-motor-form">
+                <input type="text" id="book-motor-id" placeholder="Motor ID" required>
+                <input type="text" id="book-name" placeholder="Name" required>
+                <input type="text" id="book-address" placeholder="Address" required>
+                <input type="text" id="book-price" placeholder="Price" required>
+                <button type="submit">Book Motor</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Update Booking</h2>
+            <form id="update-booking-form">
+                <input type="text" id="update-booking-id" placeholder="Booking ID" required>
+                <input type="text" id="update-book-motor-id" placeholder="Motor ID" required>
+                <input type="text" id="update-book-name" placeholder="Name" required>
+                <input type="text" id="update-book-address" placeholder="Address" required>
+                <input type="text" id="update-book-price" placeholder="Price" required>
+                <button type="submit">Update Booking</button>
+            </form>
+        </div>
+
+        <div class="form-container">
+            <h2>Delete Booking</h2>
+            <form id="delete-booking-form">
+                <input type="text" id="delete-booking-id" placeholder="Booking ID" required>
+                <button type="submit">Delete Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>

@@ -89,7 +89,7 @@ info:
     methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)
   version: 1.0.0
 servers:
-  - url: http://localhost:8080
+  - url: https://130.162.195.228/mhs714220022/
 components:
   securitySchemes:
     bearerAuth:

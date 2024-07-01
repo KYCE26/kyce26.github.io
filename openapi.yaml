@@ -36,7 +36,7 @@ paths:
       security:
         - bearerAuth: []
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -61,11 +61,11 @@ paths:
               example:
                 username: Kyce
                 email: rifky@gmail.com
-                password: '123'
+                password: "123"
       security:
         - bearerAuth: []
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -85,7 +85,7 @@ paths:
         include some kind of response body - for example, HTML web content or
         JSON data.
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -104,11 +104,11 @@ paths:
       security:
         - bearerAuth: []
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
-  /motors/{MotorId}:
+  /motors/{id}:
     put:
       tags:
         - Motor
@@ -139,13 +139,13 @@ paths:
           schema:
             type: string
           example: application/json
-        - name: MotorId
+        - name: id
           in: path
           schema:
             type: integer
           required: true
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -164,13 +164,13 @@ paths:
       security:
         - bearerAuth: []
       parameters:
-        - name: MotorId
+        - name: id
           in: path
           schema:
             type: integer
           required: true
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -190,7 +190,7 @@ paths:
         include some kind of response body - for example, HTML web content or
         JSON data.
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -211,7 +211,7 @@ paths:
       security:
         - bearerAuth: []
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -254,7 +254,7 @@ paths:
             type: string
           required: true
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}
@@ -279,7 +279,7 @@ paths:
             type: string
           required: true
       responses:
-        '200':
+        "200":
           description: Successful response
           content:
             application/json: {}

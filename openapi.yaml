@@ -142,7 +142,7 @@ paths:
         - name: MotorId
           in: path
           schema:
-            type: string
+            type: integer
           required: true
       responses:
         '200':
@@ -167,7 +167,7 @@ paths:
         - name: MotorId
           in: path
           schema:
-            type: string
+            type: integer
           required: true
       responses:
         '200':
